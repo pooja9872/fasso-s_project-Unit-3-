@@ -1,13 +1,5 @@
 
 
-
-// function start() {
-//     setTimeout(function () {
-//         alert("Address Sucsessfully Added Now Please Process For Payments");
-//         window.location.href = './payments.html';
-//     }, 10000);
-// }
-
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 // const overlay = document.getElementById('overlay')
@@ -117,4 +109,11 @@ addbtn.onclick = function () {
         localStorage.removeItem('MyAddress');
         addressdiv.textContent = "";
     }
+}
+
+function start() {
+    setTimeout(function () {
+        alert("Address Sucsessfully Added Now Please Process For Payments");
+        window.location.href = '/payment';
+    }, 10000);
 }
